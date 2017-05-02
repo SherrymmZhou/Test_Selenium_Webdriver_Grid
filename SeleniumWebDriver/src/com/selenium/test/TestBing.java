@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 @Before
   public void setUp() throws Exception {
+	
     driver = new FirefoxDriver();				//创建Firefox类型的Driver，需要电脑提前安装火狐浏览器，建议安装在默认路径。
 	baseUrl = "http://cn.bing.com/";          //设置测试的url地址
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);  //设置全局30秒的默认超时时间
